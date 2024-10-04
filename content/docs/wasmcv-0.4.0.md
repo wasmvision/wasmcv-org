@@ -1,5 +1,6 @@
 ---
 title: "wasmCV Documentation - v0.4.0"
+slug: "0.4.0"
 date: 2024-10-04T11:50:06+02:00
 draft: false
 featuredImg: ""
