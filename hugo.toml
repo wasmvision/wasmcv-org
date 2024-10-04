@@ -1,6 +1,6 @@
 baseURL = "https://wasmcv.org"
 
-title = 'wasmCV - WebAssembly interfaces for computer vision'
+title = 'wasmCV'
 
 # defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
@@ -41,8 +41,8 @@ expiryDate = ["expiryDate"]
   # images = [""]
   themeColor = "#494f5c"
 
-  #homeSubtitle = "CHANGE ME HOME SUBTITLE"
-  footerCopyright = "2024 The Hybrid Group and friends"
+  homeSubtitle = "WebAssembly interfaces for computer vision"
+  footerCopyright = "The Hybrid Group and friends"
   
   footerHideThemeName = true
   # bgImg = ""
