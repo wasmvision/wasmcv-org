@@ -1,6 +1,10 @@
 ---
-header_brand: "wasmCV"
-header_tagline_paragraph: "WebAssembly Interfaces for Computer Vision"
+title: "wasmCV Documentation - v0.4.0"
+date: 2024-10-04T11:50:06+02:00
+draft: false
+featuredImg: ""
+toc : true
+mathjax : false
 ---
 
 # <a id="imports"></a>World imports

@@ -1,3 +1,4 @@
-[submodule "themes/hugo-product-launch"]
-	path = themes/hugo-product-launch
-	url = https://github.com/janraasch/hugo-product-launch.git
+[submodule "themes/hermit-v2"]
+	path = themes/hermit-v2
+	url = https://github.com/1bl4z3r/hermit-V2
+	branch = main

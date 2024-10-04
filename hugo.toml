@@ -1,54 +1,82 @@
 baseURL = "https://wasmcv.org"
 
-# This is a "one page"-website, so we do not need these kinds of pages...
-disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT", "404"]
+title = 'wasmCV - WebAssembly interfaces for computer vision'
 
-defaultContentLanguage = "en"
+# defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+theme = "hermit-v2"
 
-# The name of this wonderful theme ;-).
-theme = "hugo-product-launch"
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+#hasCJKLanguage = true
 
-# The "title" of your website
-title = "wasmcv - computer vision interfaces for WebAssembly"
+rssLimit = 10
 
-# Render line-breaks in .md-files as line-breaks in HTML.
-# This is e.g. useful for rendering a multi-line address.
-[markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            hardWraps = true
+copyright = "2024 The Hybrid Group and friends"
+enableEmoji = true
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+  # category = "categories"
 
 [params]
-    # A "copyright"-line to be added at the bottom of the page.
-    # Hint: Markdown is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© 2024 The Hybrid Group and friends"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-    # The "description" of your website. This is used in the meta data of your generated html.
-    description = "wasmcv - computer vision interfaces for WebAssembly"
+  # description = "wasmCV - WebAssembly interfaces for computer vision"
+  # images = [""]
+  themeColor = "#494f5c"
 
-    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-    # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
-    favicon = "images/favicon.png"
+  #homeSubtitle = "CHANGE ME HOME SUBTITLE"
+  footerCopyright = "2024 The Hybrid Group and friends"
+  
+  footerHideThemeName = true
+  # bgImg = ""
 
-    # These "images" are used for the structured data templates. This will show up, when
-    # services like Twitter or Slack want to generate a preview of a link to your site.
-    # See https://gohugo.io/templates/internal#twitter-cards and
-    # https://gohugo.io/templates/internal#open-graph.
-    # images = ["images/share-image.png"]
+  justifyContent = false
 
-    # Another "title" :-). This one is used as the site_name on the Hugo's internal
-    # opengraph structured data template.
-    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "wasmcv - computer vision interfaces for WebAssembly"
+  relatedPosts = false
+  code_copy_button = true
 
-    # LICENSE: Hugo Product Launch by Jan Raasch is licensed
-    # under Attribution 4.0 International (CC BY 4.0).
-    # See https://github.com/janraasch/hugo-product-launch#license.
-    # This theme will, by default, inject a design-by-line at the bottom of the page.
-    # **If** you would like to use this theme without attribution,
-    # permissions beyond this license's scope **are available** at
-    # https://github.com/janraasch/hugo-product-launch/blob/master/MORE_PERMISSIONS.md
-    hidedesignbyline = true
+  homeSubtitlePrinter = true
+  scrollToTop = true 
+  global_mathjax = false
+  readTime = false
+  shareSocial = true
+  
+  [[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/wasmvision/wasmcv"
 
-    [params.meta]
-        keywords = "wasm, wasi, opencv, computervision, go, rust, c"
+  [[params.socialLinks]]
+    name = "mastodon"
+    url = "https://mastodon.social/@wasmvision"
+
+  [[params.socialLinks]]
+    name = "x"
+    url = "https://twitter.com/wasmvision"
+
+[menu]
+  [[menu.main]]
+    name = "Documentation"
+    url = "docs/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about-wasmcv/"
+    weight = 20
