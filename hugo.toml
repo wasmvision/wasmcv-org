@@ -12,7 +12,7 @@ pygmentsUseClasses  = true
 
 rssLimit = 10
 
-copyright = "2024 The Hybrid Group and friends"
+copyright = "2024-2025 The Hybrid Group and friends"
 enableEmoji = true
 
 [frontmatter]
