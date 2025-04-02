@@ -60,15 +60,15 @@ expiryDate = ["expiryDate"]
   
   [[params.socialLinks]]
     name = "github"
-    url = "https://github.com/wasmvision/wasmcv"
+    url = "https://github.com/wasmvision"
 
   [[params.socialLinks]]
     name = "mastodon"
     url = "https://mastodon.social/@wasmvision"
 
   [[params.socialLinks]]
-    name = "x"
-    url = "https://twitter.com/wasmvision"
+    name = "bsky"
+    url = "https://bsky.app/profile/wasmvision.com"
 
 [menu]
   [[menu.main]]
